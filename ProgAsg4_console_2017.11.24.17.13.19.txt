@@ -1,0 +1,35 @@
+Time Stamp of output: 2017.11.24.17.13.19
+
+Sorted Integer Collection:
+    -30     13     45     70    100
+
+binarySearching for -130; found at index: -1
+binarySearching for -30; found at index: 0
+binarySearching for 45; found at index: 2
+binarySearching for 100; found at index: 4
+binarySearching for 130; found at index: -1
+binarySearching for 0; found at index: -1
+
+Sorted String Collection:
+  Baker  Camille  Lee  adams  dixon  johnson
+
+binarySearching for 'Aron'; found at index: -1
+binarySearching for 'Baker'; found at index: 0
+binarySearching for 'adams'; found at index: 3
+binarySearching for 'johnson'; found at index: 5
+binarySearching for 'zed'; found at index: -1
+
+Sorted Student Collection by Name:
+  StudentRecord [studentID=1, name=Chakra, gpa=3.1]
+  StudentRecord [studentID=3, name=Chan, gpa=3.3]
+  StudentRecord [studentID=2, name=Jeb, gpa=3.2]
+  StudentRecord [studentID=5, name=May, gpa=3.4]
+  StudentRecord [studentID=6, name=augustus, gpa=3.5]
+
+binarySearching for 'April'; found at index: -1
+binarySearching for 'Chakra'; found at index: 0
+binarySearching for 'Jeb'; found at index: 2
+binarySearching for 'augustus'; found at index: 4
+binarySearching for 'zed'; found at index: -1
+
+End of Tests.

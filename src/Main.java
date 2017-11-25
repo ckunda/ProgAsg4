@@ -1,8 +1,19 @@
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		
+		// Redirect all console output to file (with time stamp)
+		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
+		System.setOut(new PrintStream(
+				new FileOutputStream("ProgAsg4_console_" + timeStamp + ".txt")));
+		System.out.println("Time Stamp of output: " + timeStamp + "\n");
+
 	    GenericContainer gC = new GenericContainer();
 	    
 	    /*
@@ -101,5 +112,8 @@ public class Main {
 	    		studentGc.binarySearch(new Student(1, "augustus", 3.1f)));
 	    System.out.println("binarySearching for 'zed'; found at index: " +
 	    		studentGc.binarySearch(new Student(1, "zed", 3.1f)));
+		
+		System.out.println("\nEnd of Tests.");
+		System.out.close();
 	}   
 }
